@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lohan Adjedj - INSA Toulouse student passionate about space and aeronautics.">
 
-  <title>Lohan Adjedj</title>
+  <title>Lohan Adjedj | Portfolio</title>
 
-  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
-
-  <!-- Font -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
@@ -18,53 +16,71 @@
   <main class="container">
 
     <header class="header">
-      <h1>Lohan Adjedj</h1>
-      <p class="subtitle">First year student at INSA Toulouse</p>
+      <h1 class="main-title">Lohan Adjedj</h1>
+      <p class="subtitle">First-year student at INSA Toulouse</p>
 
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/lohan-adjedj/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/lolo-rgb" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="mailto:adjedjlohan2005@gmail.com"><i class="fas fa-envelope"></i></a>
-      </div>
+      <nav class="social-icons" aria-label="Social links">
+        <a href="https://www.linkedin.com/in/lohan-adjedj/" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://github.com/lolo-rgb" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="mailto:adjedjlohan2005@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </nav>
     </header>
 
-    <!-- Tabs -->
     <section class="tabs">
 
       <div class="tab-buttons">
-        <button class="tab active" data-tab="home">Home</button>
-        <button class="tab" data-tab="projects">Projects</button>
-        <button class="tab" data-tab="blog">Blog</button>
+        <button class="tab active" data-tab="home" role="tab" aria-selected="true">Home</button>
+        <button class="tab" data-tab="projects" role="tab" aria-selected="false">Projects</button>
+        <button class="tab" data-tab="blog" role="tab" aria-selected="false">Blog</button>
       </div>
 
+      <!-- HOME -->
       <div class="tab-content active" id="home">
         <p>
-          Hey, I'm Lohan Adjedj, a first year student at INSA Toulouse.
-          I'm passionate about space 🚀 and aeronautics ✈.
-          I'm currently working on the thermal design of a CubeSat 🛰️ at ToloSat.
+          Hey, I'm <span class="name">Lohan Adjedj</span>, a first-year student at INSA Toulouse.
         </p>
 
         <p>
-          <a href="CV.pdf" target="_blank" class="cv-link">→ View my CV</a>
+          I'm passionate about 
+          <span class="accent">space 🚀</span> and 
+          <span class="accent">aeronautics ✈</span>.
         </p>
+
+        <p>
+          I'm currently 
+          <span class="accent">
+            working on the thermal design of a CubeSat 🛰️ at ToloSat
+          </span>.
+        </p>
+
+        <a href="CV.pdf" target="_blank" class="cv-link">
+          → View my CV
+        </a>
       </div>
 
+      <!-- PROJECTS -->
       <div class="tab-content" id="projects">
         <p>My projects will be displayed here.</p>
       </div>
 
+      <!-- BLOG -->
       <div class="tab-content" id="blog">
-        <p>You can find my blog posts here.</p>
+        <p>You will find my blog posts here.</p>
+        <p><strong>Coming soon!</strong></p>
       </div>
-
-      
 
     </section>
 
   </main>
 
-  <!-- JS -->
   <script src="js/main.js"></script>
 </body>
 </html>
-

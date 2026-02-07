@@ -1,12 +1,31 @@
-const tabs = document.querySelectorAll(".tab");
-const contents = document.querySelectorAll(".tab-content");
+document.addEventListener("DOMContentLoaded", () => {
 
-tabs.forEach(tab => {
-  tab.addEventListener("click", () => {
-    tabs.forEach(t => t.classList.remove("active"));
-    contents.forEach(c => c.classList.remove("active"));
+  const container = document.querySelector(".tab-buttons");
 
-    tab.classList.add("active");
-    document.getElementById(tab.dataset.tab).classList.add("active");
+  container.addEventListener("click", (e) => {
+
+    const clickedTab = e.target.closest(".tab");
+    if (!clickedTab) return;
+
+    const targetId = clickedTab.dataset.tab;
+    const targetContent = document.getElementById(targetId);
+    if (!targetContent) return;
+
+    // Reset active states
+    document.querySelectorAll(".tab").forEach(tab => {
+      tab.classList.remove("active");
+      tab.setAttribute("aria-selected", "false");
+    });
+
+    document.querySelectorAll(".tab-content").forEach(content => {
+      content.classList.remove("active");
+    });
+
+    // Activate selected
+    clickedTab.classList.add("active");
+    clickedTab.setAttribute("aria-selected", "true");
+    targetContent.classList.add("active");
+
   });
+
 });
