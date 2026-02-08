@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const targetContent = document.getElementById(targetId);
     if (!targetContent) return;
 
-    // Reset active states
     document.querySelectorAll(".tab").forEach(tab => {
       tab.classList.remove("active");
       tab.setAttribute("aria-selected", "false");
@@ -21,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
       content.classList.remove("active");
     });
 
-    // Activate selected
     clickedTab.classList.add("active");
     clickedTab.setAttribute("aria-selected", "true");
     targetContent.classList.add("active");

@@ -13,11 +13,24 @@
 
 <body>
 
-  <main class="container">
+  <main class="container fade-in">
 
+    <!-- HEADER -->
     <header class="header">
-      <h1 class="main-title">Lohan Adjedj</h1>
-      <p class="subtitle">First-year student at INSA Toulouse</p>
+
+      <div class="profile">
+
+        <div class="profile-wrapper">
+          <img src="/Users/lohan/Desktop/Lohan.github.io/lohan.jpeg" alt="Photo of Lohan Adjedj" class="profile-pic">
+          <div class="orbit"></div>
+        </div>
+
+        <div class="profile-text">
+          <h1 class="main-title">Lohan Adjedj</h1>
+          <p class="subtitle">First-year student at INSA Toulouse</p>
+        </div>
+
+      </div>
 
       <nav class="social-icons" aria-label="Social links">
         <a href="https://www.linkedin.com/in/lohan-adjedj/" target="_blank" rel="noopener noreferrer">
@@ -32,20 +45,21 @@
           <i class="fas fa-envelope"></i>
         </a>
       </nav>
+
     </header>
 
+    <!-- TABS -->
     <section class="tabs">
 
       <div class="tab-buttons">
-        <button class="tab active" data-tab="home" role="tab" aria-selected="true">Home</button>
-        <button class="tab" data-tab="projects" role="tab" aria-selected="false">Projects</button>
-        <button class="tab" data-tab="blog" role="tab" aria-selected="false">Blog</button>
+        <button class="tab active" data-tab="home" aria-selected="true">Home</button>
+        <button class="tab" data-tab="projects" aria-selected="false">Projects</button>
+        <button class="tab" data-tab="blog" aria-selected="false">Blog</button>
       </div>
 
-      <!-- HOME -->
       <div class="tab-content active" id="home">
         <p>
-          Hey, I'm <span class="name">Lohan Adjedj</span>, a first-year student at INSA Toulouse.
+          Hey, I'm <span class="accent">Lohan Adjedj</span>, a first-year student at INSA Toulouse.
         </p>
 
         <p>
@@ -66,15 +80,12 @@
         </a>
       </div>
 
-      <!-- PROJECTS -->
       <div class="tab-content" id="projects">
         <p>My projects will be displayed here.</p>
       </div>
 
-      <!-- BLOG -->
       <div class="tab-content" id="blog">
-        <p>You will find my blog posts here.</p>
-        <p><strong>Coming soon!</strong></p>
+        <p>Blog posts coming soon.</p>
       </div>
 
     </section>
